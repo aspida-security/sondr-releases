@@ -1,0 +1,29 @@
+name: Sondr suggested something wrong
+description: A suggestion, explanation or lesson was incorrect or misleading
+labels: ["content"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        These reports are the most useful ones we get. Thank you. Please don't paste passwords, keys or private file names.
+  - type: textarea
+    id: why
+    attributes:
+      label: Output of `sondr why`
+      description: Run `sondr why 1` (or the number of the suggestion that was wrong) and paste what it printed.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What was wrong, and what is right?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Sondr version
+      description: The output of `sondr --version`
+    validations:
+      required: true

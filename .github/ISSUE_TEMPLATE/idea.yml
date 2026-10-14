@@ -1,0 +1,19 @@
+name: Idea
+description: Something that would make Sondr more useful
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: Describe the problem you ran into, not only the solution. Don't paste secrets.
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: How comfortable are you in a terminal?
+      options:
+        - New to it
+        - Some experience
+        - Use it every day

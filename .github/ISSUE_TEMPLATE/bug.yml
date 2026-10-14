@@ -1,0 +1,32 @@
+name: Bug report
+description: Something in Sondr didn't work
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for telling us. `sondr feedback` can fill the basics in for you. Please don't paste passwords, keys or private file names.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you type, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Sondr version
+      description: The output of `sondr --version`
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Linux distribution and shell
+      description: For example "Ubuntu 24.04, bash". `sondr doctor` shows more.
+  - type: textarea
+    id: doctor
+    attributes:
+      label: sondr doctor (optional)
+      render: text

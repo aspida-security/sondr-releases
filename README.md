@@ -63,7 +63,7 @@ $ sondr why 1                      # why it suggested the first one
 $ sondr close --solved "missing DATABASE_URL in .env"
 ```
 
-Sondr only suggests. It never runs a command for you.
+Sondr only suggests. It never runs the commands it suggests.
 
 ## Privacy, in plain words
 
